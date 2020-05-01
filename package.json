@@ -2,14 +2,13 @@
   "name": "books-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://mavhungu.github.io/Google-Books_API",
+  "homepage": "http://mavhungu.github.io/Google-Books_API",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "gh-pages": "^2.2.0",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
@@ -19,13 +18,12 @@
     "tachyons": "^4.12.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
