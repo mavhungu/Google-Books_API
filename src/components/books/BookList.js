@@ -18,7 +18,11 @@ const BookList = ({volumes}) => {
                             publisher={volumes[i].volumeInfo.publisher}
                             publishedDate={volumes[i].volumeInfo.publishedDate}
                             previewLink={volumes[i].volumeInfo.previewLink}
-                            ratingCount={volumes[i].volumeInfo.ratingCount}
+                            industryIdentifiers0={volumes[i].volumeInfo.industryIdentifiers[0].identifier}
+                            industryIdentifierstype0={volumes[i].volumeInfo.industryIdentifiers[0].type}
+
+                            industryIdentifiers1={volumes[i].volumeInfo.industryIdentifiers[1].identifier}
+                            industryIdentifierstype1={volumes[i].volumeInfo.industryIdentifiers[1].type}
                             
                         />
                     );
