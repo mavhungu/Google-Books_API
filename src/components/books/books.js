@@ -15,9 +15,9 @@ return(
                     {`Publisher : ${publisher}`}<br />
                     {`Language : ${language}`}
                     </p>
-                    <p>{industryIdentifierstype0} : {industryIdentifiers0}<br/>
+                    {/*<p>{industryIdentifierstype0} : {industryIdentifiers0}<br/>
                      {industryIdentifierstype1} : {industryIdentifiers1}
-                    </p>
+                    </p>*/}
                     
                 <a className="f6 link dim br3 ba ph3 pv2 mb2 dib dark-gray" href={`${infoLink}`}>View</a>
             </div>
