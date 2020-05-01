@@ -1,7 +1,6 @@
 import React from "react";
 import "tachyons";
 
-
 const Search = ({OnSearchInput,OnSubmitButton,onRouteChange})=>{
     return(
         <div className={''}>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Search from './components/seach/search';
-import Me from './components/seach/me';
+import Me from './components/profile/me';
 import Nav from './components/navigation/nav';
 import BookList from "./components/books/BookList";
 import Ronewa from "./components/books/ronewa";
@@ -14,7 +14,7 @@ export default class App extends Component {
         this.state = {
             text: '',
             volumes: [],
-            ronewa:{},
+            ronewa:[],
             route: 'search',
             isSignedIn: false
         }
@@ -32,9 +32,9 @@ export default class App extends Component {
         this.setState({
             ronewa: this.state.volumes
         })
-
-        console.log(this.state.volumes)
-        console.log(this.state.volumes[0].saleInfo)
+        /*console.log(this.state.volumes)
+        console.log(this.state.volumes[0].saleInfo)*/
+        document.querySelector('#search-book').value = ' ';
     }
 
     onRouteChange = (route) => {
@@ -56,7 +56,7 @@ export default class App extends Component {
               <Search OnSubmitButton={this.OnSubmitButton} OnSearchInput={this.OnSearchInput} onRouteChange={this.onRouteChange}/>
                 { route === 'searched'
                 ? <div >
-                    <BookList volumes={this.state.volumes} />
+                    <BookList volumes={this.state.ronewa} />
                   </div>
                 :(
                   route === 'search'
