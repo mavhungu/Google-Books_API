@@ -1,5 +1,5 @@
 import React from "react";
-import Small from '../img/small.png';
+import Small from '../img/small2.png';
 import "tachyons";
 
  const Me = ({onRouteChange})=>{

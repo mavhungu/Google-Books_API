@@ -7,9 +7,9 @@ const Nav = ()=>{
                 <img src="./small.png" className="dib w2 h2 br-100 grow pointer" alt="Site Name"/>
             </a>
             <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-                <a className="link dim white f6 f5-l dib mr3 mr4-l grow pointer" href="#">Home</a>
+                {/*<a className="link dim white f6 f5-l dib mr3 mr4-l grow pointer" href="#">Home</a>
                 <a className="link dim white f6 f5-l dib mr3 mr4-l grow pointer" href="#" >Profile</a>
-                <a className="link dim white f6 f5-l dib grow pointer" href="#"  >Logout</a>
+                <a className="link dim white f6 f5-l dib grow pointer" href="#"  >Logout</a>*/}
             </div>
         </nav>
     )
