@@ -32,8 +32,8 @@ export default class App extends Component {
         this.setState({
             ronewa: this.state.volumes
         })
-        /*console.log(this.state.volumes)
-        console.log(this.state.volumes[0].saleInfo)*/
+        console.log(this.state.volumes)
+        /*console.log(this.state.volumes[0].saleInfo)*/
         document.querySelector('#search-book').value = ' ';
     }
 
