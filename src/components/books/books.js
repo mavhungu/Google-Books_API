@@ -23,6 +23,6 @@ return(
             </div>
         </article>
     </div>
-)
+);
 }
 export default Book;

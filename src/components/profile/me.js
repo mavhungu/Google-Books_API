@@ -8,6 +8,6 @@ import "tachyons";
             <div className={'mb3'}>{'Books will show here'}</div>
             <img src={Small} className="br-100 h4 w4 dib ba b--black-05 pa2" alt='profile' />
         </div>
-     )
+     );
  }
  export default Me;

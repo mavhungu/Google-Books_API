@@ -3,7 +3,7 @@ import "tachyons";
 
 const Search = ({OnSearchInput,OnSubmitButton,onRouteChange})=>{
     return(
-        <div className={''}>
+        <div className={'mt5'}>
             <form className="mw7 center pa3 br2-ns ba b--black-10 m2" onSubmit={OnSubmitButton}>
                 <fieldset className="cf bn ma0 pa0">
                     {/*<legend className="pa0 f5 f4-ns mb3 black-80">Search for Books</legend>*/}
