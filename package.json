@@ -11,6 +11,8 @@
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
+    "react-alert": "^7.0.0",
+    "react-alert-template-basic": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-tilt": "^0.1.4",
