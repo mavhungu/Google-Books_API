@@ -4,12 +4,12 @@ import Me from './components/profile/me';
 import Nav from './components/navigation/nav';
 import BookList from "./components/books/BookList";
 import Ronewa from "./components/books/ronewa";
-import { useAlert } from 'react-alert'
+//import { useAlert } from 'react-alert'
 import "tachyons";
 
 import './App.css';
 
-const alert = useAlert;
+
 export default class App extends Component {
     
     constructor(props) {
@@ -34,15 +34,17 @@ export default class App extends Component {
       event.preventDefault();
        if(this.state.volumes.length === 0){
            
-           alert("No Seach Item Entered");
+         return alert("No Seach Item Entered");
 
-       }
+       }else{
         this.setState({
             ronewa: this.state.volumes
         })
         console.log(this.state.volumes)
         /*console.log(this.state.volumes[0].saleInfo)*/
         document.querySelector('#search-book').value = ' ';
+       }
+
     }
 
     onRouteChange = (route) => {
