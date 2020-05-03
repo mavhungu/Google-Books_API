@@ -4,9 +4,9 @@ import Me from './components/profile/me';
 import Nav from './components/navigation/nav';
 import BookList from "./components/books/BookList";
 import Ronewa from "./components/books/ronewa";
+import Footer from "./components/footer/footer";
 //import { useAlert } from 'react-alert'
 import "tachyons";
-
 import './App.css';
 
 
@@ -34,7 +34,7 @@ export default class App extends Component {
       event.preventDefault();
        if(this.state.volumes.length === 0){
            
-         return alert("No Seach Item Entered");
+         return alert("Enter Seach Item");
 
        }else{
         this.setState({
@@ -74,6 +74,7 @@ export default class App extends Component {
                     : <Ronewa onRouteChange={this.onRouteChange}/>
                   )
                 }
+                <Footer />
             </div>
         );
     }
