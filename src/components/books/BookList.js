@@ -15,6 +15,8 @@ const BookList = ({volumes}) => {
                             title={volumes[i].volumeInfo.title}
                             description={volumes[i].volumeInfo.description}
                             language={volumes[i].volumeInfo.language}
+                            Categories={volumes[i].volumeInfo.categories}
+                            pageCount={volumes[i].volumeInfo.pageCount}
                             publisher={volumes[i].volumeInfo.publisher}
                             publishedDate={volumes[i].volumeInfo.publishedDate}
                             previewLink={volumes[i].volumeInfo.previewLink}
