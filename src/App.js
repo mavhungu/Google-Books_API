@@ -9,6 +9,7 @@ import "tachyons";
 
 import './App.css';
 
+const alert = useAlert;
 export default class App extends Component {
     
     constructor(props) {
@@ -33,7 +34,7 @@ export default class App extends Component {
       event.preventDefault();
        if(this.state.volumes.length === 0){
            
-           alert("Enter seach item");
+           alert("No Seach Item Entered");
 
        }
         this.setState({
