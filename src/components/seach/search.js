@@ -9,7 +9,7 @@ const Search = ({OnSearchInput,OnSubmitButton,onRouteChange})=>{
                     {/*<legend className="pa0 f5 f4-ns mb3 black-80">Search for Books</legend>*/}
                     <div className="cf">
                         <label className="clip" htmlFor="email-address">Email Address</label>
-                        <input require="true" className="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+                        <input require="true" className="f6 f5-l input-reset bn fl black-80 b--green bg-lightest-blue pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
                             placeholder="Search" type="text" name="search-book"
                             id="search-book" onChange={OnSearchInput} />
                             <input
