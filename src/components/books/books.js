@@ -33,7 +33,7 @@ return(
                             <p>{`Published : ${publishedDate}`}<br />
                             {`Publisher : ${publisher}`}<br />
                             </p>
-                            <a className="f6 link dim br3 ba ph3 pv2 mb2 dib dark-blue" href={`${infoLink}`}>View Book</a>
+                            <a className="f6 link dim br3 ba ph3 pv2 mb2 dib dark-blue" target={'_blank'} rel='noopener noreferrer' href={`${infoLink}`}>View Book</a>
                             
                             {/*<a class="f6 link dim br2 ba bw1 ph3 pv2 mb2 dib dark-blue bg-white" href="#0">View Book</a>*/}
                         </div>
