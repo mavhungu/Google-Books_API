@@ -23,19 +23,20 @@ export default class App extends Component {
         }
     }
     OnSearchInput = (event) => {
-        this.setState({
-            text: event.target.value
+      this.setState({
+        text: event.target.value
+      })
+      fetch(`https://www.googleapis.com/books/v1/volumes?q=${this.state.text}`)
+        .then(response =>{ return response.json()})
+        .then(data => {this.setState({volumes: data.items})})
+        .catch((e)=>{
+          return alert("Something Went Wrong");
         })
-        fetch(`https://www.googleapis.com/books/v1/volumes?q=${this.state.text}`)
-            .then(response =>{ return response.json()})
-            .then(data => {this.setState({volumes: data.items})})
     }
     OnSubmitButton = (event) => {
       event.preventDefault();
        if(this.state.volumes.length === 0){
-           
          return alert("Enter Seach Item");
-
        }else{
         this.setState({
             ronewa: this.state.volumes
