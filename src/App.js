@@ -9,7 +9,6 @@ import Footer from "./components/footer/footer";
 import "tachyons";
 import './App.css';
 
-
 export default class App extends Component {
     
     constructor(props) {
@@ -35,17 +34,16 @@ export default class App extends Component {
     }
     OnSubmitButton = (event) => {
       event.preventDefault();
-       if(this.state.volumes.length === 0){
-         return alert("Enter Seach Item");
-       }else{
+      if(this.state.volumes.length === 0){
+        return alert("Enter Seach Item");
+      }else{
         this.setState({
             ronewa: this.state.volumes
         })
         console.log(this.state.volumes)
         /*console.log(this.state.volumes[0].saleInfo)*/
         document.querySelector('#search-book').value = ' ';
-       }
-
+      }
     }
 
     onRouteChange = (route) => {
@@ -71,7 +69,7 @@ export default class App extends Component {
                   </div>
                 :(
                   route === 'search'
-                   ? <Me onRouteChange={this.onRouteChange}/>
+                  ? <Me onRouteChange={this.onRouteChange}/>
                     : <Ronewa onRouteChange={this.onRouteChange}/>
                   )
                 }
