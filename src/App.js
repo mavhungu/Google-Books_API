@@ -34,6 +34,11 @@ export default class App extends Component {
     }
     OnSubmitButton = (event) => {
       event.preventDefault();
+      this.setState({
+        ronewa: this.state.volumes
+    })
+
+      /*event.preventDefault();
       if(this.state.volumes.length === 0){
         return alert("Enter Seach Item");
       }else{
@@ -42,8 +47,8 @@ export default class App extends Component {
         })
         console.log(this.state.volumes)
         /*console.log(this.state.volumes[0].saleInfo)*/
-        document.querySelector('#search-book').value = ' ';
-      }
+        /*document.querySelector('#search-book').value = ' ';
+      }*/
     }
 
     onRouteChange = (route) => {
@@ -56,6 +61,7 @@ export default class App extends Component {
         }
         this.setState({route: route});
     }
+    componentDidMount(){}
     render() {
       const {route} = this.state;
 
