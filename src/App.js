@@ -5,7 +5,6 @@ import Nav from './components/navigation/nav';
 import BookList from "./components/books/BookList";
 import Ronewa from "./components/books/ronewa";
 import Footer from "./components/footer/footer";
-//import { useAlert } from 'react-alert'
 import "tachyons";
 import './App.css';
 
@@ -16,7 +15,7 @@ export default class App extends Component {
         this.state = {
             text: '',
             volumes: [],
-            ronewa:[],
+            search:[],
             route: 'search',
             isSignedIn: false
         }
@@ -35,20 +34,8 @@ export default class App extends Component {
     OnSubmitButton = (event) => {
       event.preventDefault();
       this.setState({
-        ronewa: this.state.volumes
+        search: this.state.volumes
     })
-
-      /*event.preventDefault();
-      if(this.state.volumes.length === 0){
-        return alert("Enter Seach Item");
-      }else{
-        this.setState({
-            ronewa: this.state.volumes
-        })
-        console.log(this.state.volumes)
-        /*console.log(this.state.volumes[0].saleInfo)*/
-        /*document.querySelector('#search-book').value = ' ';
-      }*/
     }
 
     onRouteChange = (route) => {
@@ -57,7 +44,7 @@ export default class App extends Component {
         } else if (route === 'home') {
             this.setState({isSignedIn: true})
         }else if(route === 'searched'){
-            console.log(this.state.ronewa)
+            console.log(this.state.search)
         }
         this.setState({route: route});
     }
@@ -71,7 +58,7 @@ export default class App extends Component {
               <Search OnSubmitButton={this.OnSubmitButton} OnSearchInput={this.OnSearchInput} onRouteChange={this.onRouteChange}/>
                 { route === 'searched'
                 ? <div >
-                    <BookList volumes={this.state.ronewa} />
+                    <BookList volumes={this.state.search} />
                   </div>
                 :(
                   route === 'search'
